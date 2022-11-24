@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Santeri's fine todo list">
+    <meta name="keywords" content="HTML, CSS, JavaScript, list, todo">
+    <meta name="author" content="Panteri Sepponen">
+    <title>top10 track search machine</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="todo-container">
+        <h1> Search for top 10 songs in your country</h1>
+        <div id="demo"></div>
+        <form id="form1">
+            <input type="text" id="todo-input" name="todo-input" placeholder="Give a country">
+            <input type="button" onclick="loadTop10()" value="Search">
+            <p class="error hidden" id="input-error"></p>
+        </form>
+        <div class="todo-list-container">
+            <h3 id="todo-header">Top 10 songs:</h3>
+            <ul id="track-list"></ul>
+        </div>
+    </div>
+</body>
+
+</html>
